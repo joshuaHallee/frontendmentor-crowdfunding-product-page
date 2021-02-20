@@ -1,0 +1,239 @@
+body {
+    margin: 0px;
+    font-family: 'Commissioner', sans-serif;
+    /* background-color: hsl(0, 0%, 70%); */
+    background-color: hsl(0, 0%, 98%);
+}
+
+/* Header */
+.hero-banner {
+    width: 100%;
+    height: 290px;
+    background-image: url('./images/image-hero-mobile.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.page-container {
+    margin: 0px 25px;
+}
+
+.hero-nav .hero-nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.hero-nav .hero-nav-menu {
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 30px;
+    background-color: #FFF;
+    border-radius: 15px;
+}
+
+.hero-nav .hero-nav-menu li {
+    list-style-type: none;
+    padding: 25px;
+    border-bottom: 1px solid #E8E8E8;
+    font-weight: 500;
+}
+
+/* page cards */
+
+.page-card {
+    background-color: #FFF;
+    border-radius: 15px;
+    border: 1px solid #E8E8E8;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.inner-card {
+    background-color: #FFF;
+    border-radius: 15px;
+    border: 1px solid #E8E8E8;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.mastercraft {
+    position: absolute;
+    top: -28px;
+    left: calc(50% - (56px/2));
+    border-radius: 50%;
+}
+
+.page-card .button-grouping {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-card-desc {
+    position: relative;
+    margin-top: -50px;
+}
+
+.project-card-desc h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.project-card-desc h2 {
+    font-size: .85rem;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.project-card-desc .cyan-button {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.project-card-info .card-info-header {
+    text-align: center;
+}
+
+.project-card-info .card-info-header p:nth-child(1){
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.project-card-info .card-info-header p:nth-child(2){
+    font-size: .9rem;
+    color: hsl(0, 0%, 48%);
+    margin: 10px 0px;
+}
+
+.progress {
+    margin: 35px 0px 10px 0px;
+}
+
+#days_to_completion {
+    width: 100%;
+    height: 30px;
+}
+
+.project-card-divider {
+    border-bottom: 1px solid #E8E8E8;
+    margin: 20px auto;
+    width: 35%;
+}
+
+.page-card.about h3 {
+    margin-bottom: 30px;
+}
+
+.page-card.about p {
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 48%);
+    line-height: 1.5rem;
+    font-size: 14px;
+}
+
+.inner-card.in-stock h4{
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.inner-card.in-stock .priceline {
+    font-weight: 500;
+    color: hsl(176, 50%, 47%);
+    margin-top: 8px;
+}
+
+.inner-card.out-of-stock h4{
+    color:hsl(0, 0%, 48%);
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.inner-card.out-of-stock .priceline {
+    font-weight: 500;
+    color:hsl(176, 50%, 67%);
+    margin-top: 8px;
+}
+
+.inner-card .quantity .amount {
+    font-size: 28px;
+    padding-right: 10px;
+}
+
+.inner-card .quantity .text {
+    font-weight: 400;
+    color: hsl(0, 0%, 48%)
+}
+
+.inner-card .quantity h5 {
+    display: flex;
+    align-items: center;
+}
+
+.inner-card.out-of-stock p {
+    color: hsl(0, 0%, 68%)
+}
+
+.inner-card.out-of-stock h5 {
+    color: hsl(0, 0%, 68%)
+}
+
+
+/* Style Utils*/
+
+.cyan {
+    color: hsl(176, 50%, 47%);
+}
+
+.dark-cyan {
+    color: hsl(176, 72%, 28%);
+}
+
+.black {
+    color: hsl(0, 0%, 0%);
+}
+
+.dark-gray {
+    color: hsl(0, 0%, 48%)
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+.cyan-button {
+    padding: 20px;
+    border-radius: 40px;
+    color: #FFF;
+    font-weight: 700;
+    background-color: hsl(176, 50%, 47%);
+    border-style: none;
+    font-size: 16px;
+    width: 180px;
+}
+
+.gray-button {
+    padding: 20px;
+    border-radius: 40px;
+    color: #FFF;
+    font-weight: 700;
+    background-color: hsl(0, 0%, 68%);
+    border-style: none;
+    font-size: 16px;
+    width: 180px;
+}
+
+/* @media only screen and (max-width: 575px) {
+    .hero-banner {
+        background-image: url('./images/image-hero-desktop.jpg');
+    }
+} */
