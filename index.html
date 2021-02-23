@@ -18,19 +18,20 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- 
     <header class="hero-banner">
+      <!-- <div class="hero-banner-image"></div> -->
+      <div class="page-overlay hidden" id="mobile-overlay"></div>
       <div class="page-container">
         <nav class="hero-nav">
           <div class="hero-nav-top">
             <img src="./images/logo.svg" id="logo" alt="Crowdfund logo"/>
             <img src="./images/icon-hamburger.svg" id="mobile-nav" alt="Mobile navigation"/>
           </div>
-          <!-- <ul class="hero-nav-menu">
+          <ul class="hero-nav-menu hidden" id="hero-nav-menu">
             <li>About</li>
             <li>Discover</li>
             <li>Get Started</li>
-          </ul> -->
+          </ul>
         </nav>    
       </div>
     </header>
@@ -129,49 +130,65 @@
       </div>
     </div>
 
-    <section class="modal">
+    <!-- <section class="modal" id="modal">
       <div class="modal-content page-card">
-        <h1>Back this project</h1>
+        <div class="modal-header">
+          <h2 class="modal-title">Back this project</h2>
+          <img src="./images/icon-close-modal.svg" id="modal-nav" alt="Mobile navigation"/>
+        </div>
         <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
         <form>
           <div class="page-card">
-            <input type="radio" id="pledge" name="pledge-type" value="pledge">
-            <label for="pledge">Pledge with no reward</label>
-            <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
-              you will be signed up to receive product updates via email.</p>
+
+            <div class="pledge-container">
+              <input type="radio" id="pledge" name="pledge-type" value="pledge">
+              <div class="pledge-info">
+                <label for="pledge" class="pledge-option">Pledge with no reward</label>
+              </div>
+            </div>
+            <p>Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.</p>
           </div>
 
-          <div class="page-card">
-            <input type="radio" id="bamboo-edition" name="pledge-type" value="bamboo">
-            <label for="bamboo-edition">Bamboo Stand</label>
-            <p>Pledge $25 or more</p>
-            <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
-              you’ll be added to a special Backer member list.</p>
-              101 left
+          <div class="page-card pledge">
+            <div class="pledge-container">
+              <input type="radio" id="bamboo-edition" name="pledge-type" value="bamboo">
+              <div class="pledge-info">
+                <label for="bamboo-edition" class="pledge-option">Bamboo Stand</label>
+                <span class="pledge-priceline">Pledge $25 or more</span>
+              </div>
+            </div>
+            <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
+            <p><span class="pledge-quantity">101</span> left</p>
           </div>
 
-          <div class="page-card">
-            <input type="radio" id="black-edition" name="pledge-type" value="black">
-            <label for="black-edition">Black Edition Stand</label>
-            <p>Pledge $75 or more</p>
-            <p> You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
-              member list. Shipping is included.</p>
-              64 left
+          <div class="page-card pledge">
+            <div class="pledge-container">
+              <input type="radio" id="black-edition" name="pledge-type" value="black">
+              <div class="pledge-info">
+                <label for="black-edition" class="pledge-option">Black Edition Stand</label>
+                <span class="pledge-priceline">Pledge $75 or more</span>
+              </div>
+            </div>
+            <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
+            <p><span class="pledge-quantity">64</span> left</p>
           </div>
 
-          <div class="page-card">
-            <input type="radio" id="mahogany-edition" name="pledge-type" value="mahogany">
-            <label for="mahogany-edition">Mahogany Special Edition</label>
-            <p>Pledge $200 or more</p>
-            <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
-              to our Backer member list. Shipping is included.</p>
-              0 left
+          <div class="page-card pledge">
+            <div class="pledge-container">
+              <input type="radio" id="mahogany-edition" name="pledge-type" value="mahogany">
+              <div class="pledge-info">
+                <label for="mahogany-edition" class="pledge-option">Mahogany Special Edition</label>
+                <span class="pledge-priceline">Pledge $200 or more</span>
+              </div>
+            </div>
+            <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
+            <p><span class="pledge-quantity">0</span> left</p>
           </div>
 
         </form>
       </div>
 
-    </section>
+    </section> -->
 
   </div>
 
@@ -186,20 +203,9 @@
 
   
 
-  <!-- Selection modal start -->
 
-  Back this project
-  Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
+  
 
-  Pledge with no reward
-  Choose to support us without a reward if you simply believe in our project. As a backer, 
-  you will be signed up to receive product updates via email.
-
-  Bamboo Stand
-  Pledge $25 or more
-  You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
-  you’ll be added to a special Backer member list.
-  101 left
 
   <!-- Selected pledge start -->
   Enter your pledge
@@ -207,11 +213,7 @@
   Continue
   <!-- Selected pledge end -->
 
-  Black Edition Stand
-  Pledge $75 or more
-  You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
-  member list. Shipping is included.
-  64 left
+
 
   <!-- Selected pledge start -->
   Enter your pledge
@@ -219,11 +221,7 @@
   Continue
   <!-- Selected pledge end -->
 
-  Mahogany Special Edition
-  Pledge $200 or more
-  You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
-  to our Backer member list. Shipping is included.
-  0 left
+  
 
   <!-- Selected pledge  start -->
   Enter your pledge
@@ -242,5 +240,6 @@
 
   <!-- Success modal end -->
   </p>
+  <script src="./script.js"></script>
 </body>
 </html>
