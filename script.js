@@ -1,9 +1,6 @@
 let mobileNav = document.getElementById('mobile-nav')
-// let modalNav = document.getElementById('modal-nav');
-
-// modalNav.addEventListener("click", function(){
-//     document.getElementById('modal').classList.add('hidden')
-// })
+let modalNav = document.getElementById('modal-nav');
+let backProjectButton = document.getElementById('back-project-button')
 
 mobileNav.addEventListener("click", function() {
     let menu = document.getElementById('hero-nav-menu')
@@ -17,4 +14,27 @@ mobileNav.addEventListener("click", function() {
         pageOverlay.classList.remove('hidden')
     }
     
+})
+
+modalNav.addEventListener("click", function(){
+    let modal = document.getElementById('modal-back')
+    
+    if (!modal.classList.contains('hidden')) {
+        modal.classList.add('hidden')
+    } else {
+        modal.classList.remove('hidden')
+
+    }
+})
+
+backProjectButton.addEventListener("click", function() {
+
+    let modal = document.getElementById('modal-back')
+    
+    if (!modal.classList.contains('hidden')) {
+        modal.classList.add('hidden')
+    } else {
+        modal.classList.remove('hidden')
+
+    }
 })
