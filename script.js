@@ -38,3 +38,9 @@ backProjectButton.addEventListener("click", function() {
 
     }
 })
+
+document.getElementById('modal-support-button').addEventListener("click", function() {
+    let modal = document.getElementById('modal-support')
+
+    modal.classList.add('hidden')
+})

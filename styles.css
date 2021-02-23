@@ -288,6 +288,30 @@ body {
     padding: 10px;
 }
 
+#modal-support h4 {
+    margin-bottom: 0px;
+}
+
+#modal-support p {
+    margin-top: 10px;
+}
+
+#modal-support .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#modal-support .modal-content .cyan-button {
+    margin: 0 auto;
+}
+
+#modal-support .modal-content img {
+    width: 60px;
+    margin: 0 auto;
+}
+
 .hidden {
     display: none;
 }
