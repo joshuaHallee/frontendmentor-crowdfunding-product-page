@@ -18,28 +18,30 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="hero-banner">
-      <div class="page-overlay hidden" id="mobile-overlay"></div>
-      <div class="page-container">
-        <nav class="hero-nav">
-          <div class="hero-nav-top">
-            <img src="./images/logo.svg" id="logo" alt="Crowdfund logo"/>
-            <img src="./images/icon-hamburger.svg" id="mobile-nav" alt="Mobile navigation"/>
-          </div>
-          <ul class="hero-nav-menu hidden" id="hero-nav-menu">
-            <li>About</li>
-            <li>Discover</li>
-            <li>Get Started</li>
-          </ul>
-        </nav>    
-      </div>
-    </header>
+
+  <!-- header and navigation -->
+  <header class="hero-banner">
+    <div class="page-overlay hidden" id="mobile-overlay"></div>
+    <div class="page-container">
+      <nav class="hero-nav">
+        <div class="hero-nav-top">
+          <img src="./images/logo.svg" id="logo" alt="Crowdfund logo"/>
+          <img src="./images/icon-hamburger.svg" id="mobile-nav" alt="Mobile navigation"/>
+        </div>
+        <ul class="hero-nav-menu hidden" id="hero-nav-menu">
+          <li>About</li>
+          <li>Discover</li>
+          <li>Get Started</li>
+        </ul>
+      </nav>    
+    </div>
+  </header>
 
 
   
   <div class="page-container">
 
-
+    <!-- intro card -->
     <div class="page-card project-card-desc">
       <img src="./images/logo-mastercraft.svg" class="mastercraft" alt="mastercraft logo" />
       <header>
@@ -52,6 +54,7 @@
       </div>
     </div>
 
+    <!-- project statistics -->
     <div class="page-card project-card-info">
       <div class="card-info-header">
         <p>$89,914</p>
@@ -73,6 +76,7 @@
       </div>
     </div>
 
+    <!-- page about / back options -->
     <div class="page-card about">
       <h3>About this project</h3>
       <p>
@@ -129,6 +133,7 @@
       </div>
     </div>
 
+    <!-- back project modal -->
     <section class="modal hidden" id="modal-back">
       <div class="modal-content page-card">
         <div class="modal-header">
@@ -138,7 +143,6 @@
         <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
         <form>
           <div class="page-card">
-
             <div class="pledge-container">
               <input type="radio" id="pledge" name="pledge-type" value="pledge">
               <div class="pledge-info">
@@ -183,76 +187,22 @@
             <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
             <p><span class="pledge-quantity">0</span> left</p>
           </div>
-
         </form>
       </div>
-
     </section>
 
+    <!-- support modal thanks -->
     <section class="modal" id="modal-support">
       <div class="modal-content page-card">
-       
           <img src="./images/icon-check.svg" />
-       
-      
           <h4>Thanks for your support!</h4>
           <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
             an email once our campaign is completed.</p>
           <button class="cyan-button" id="modal-support-button">Got it!</button>
-        
       </div>
     </section>
 
   </div>
-
-
-    <p>
-  
-
-
-  
-  
-  
-
-  
-
-
-  
-
-
-  <!-- Selected pledge start -->
-  Enter your pledge
-  $25
-  Continue
-  <!-- Selected pledge end -->
-
-
-
-  <!-- Selected pledge start -->
-  Enter your pledge
-  $75
-  Continue
-  <!-- Selected pledge end -->
-
-  
-
-  <!-- Selected pledge  start -->
-  Enter your pledge
-  $200
-  Continue
-  <!-- Selected pledge end -->
-
-  <!-- Selection modal end -->
-
-  <!-- Success modal start -->
-
-  Thanks for your support!
-  Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
-  an email once our campaign is completed.
-  Got it!
-
-  <!-- Success modal end -->
-  </p>
   <script src="./script.js"></script>
 </body>
 </html>
