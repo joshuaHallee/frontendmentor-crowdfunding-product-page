@@ -396,6 +396,17 @@ body {
 
 }
 
+.no-stock {
+    color: hsl(0, 0%, 48%);
+}
+
+.no-stock-option {
+    background-color: hsl(0, 0%, 92%);
+}
+
+.no-stock-priceline {
+    color: hsl(176, 50%, 67%);
+}
 
 
 @media (min-width: 575px) {
