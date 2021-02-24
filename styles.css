@@ -419,10 +419,7 @@ body {
     #bookmark-mobile {
         display: none;
     }
-    /* #bookmark {
-        
-        background-color: hsl(0, 0%, 68%);
-    } */
+
     .desktop-bookmark {
         display: flex;
         justify-content: space-between;
@@ -434,5 +431,21 @@ body {
         padding: 0px 20px;
         text-align: center;
         font-weight: 500;
+    }
+
+    .project-card-info .project-card-info-desktop {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .project-card-divider {
+        /* display: none; */
+        border-left: 1px solid #E8E8E8;
+        margin: 0px;
+        width: initial;
+    }
+
+    .card-info-header p{
+        text-align: left;
     }
 }
