@@ -19,6 +19,8 @@ body {
     margin: 0px 25px;
 }
 
+
+
 .hero-nav .hero-nav-top {
     display: flex;
     justify-content: space-between;
@@ -345,6 +347,8 @@ body {
     font-weight: 700;
 }
 
+
+
 .cyan-button {
     padding: 20px;
     border-radius: 40px;
@@ -376,8 +380,17 @@ body {
     outline-style: none;
 }
 
-/* @media only screen and (max-width: 575px) {
+@media (min-width: 575px) {
     .hero-banner {
-        background-image: url('./images/image-hero-desktop.jpg');
+        background-image: url('./images/image-hero-desktop.jpg') !important;
     }
-} */
+
+    .page-container {
+        max-width: 730px;
+        margin: 0 auto;
+    }
+
+    .modal-content {
+        max-width: 690px;
+    }
+}
