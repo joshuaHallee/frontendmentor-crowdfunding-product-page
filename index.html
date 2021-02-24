@@ -50,7 +50,11 @@
       </header>
       <div class="button-grouping">
         <button class="cyan-button" id="back-project-button">Back this project</button>
-        <img src="./images/icon-bookmark.svg" alt="Bookmark"/>
+        <div class="desktop-bookmark hidden">
+          <img src="./images/icon-bookmark.svg" id="bookmark" alt="Bookmark"/>
+          <div>Bookmark</div>
+        </div>
+        <img src="./images/icon-bookmark.svg" id="bookmark-mobile" alt="Bookmark"/>
       </div>
     </div>
 
@@ -89,7 +93,7 @@
         to allow notepads, pens, and USB sticks to be stored under the stand.
       </p>
      
-      <div class="inner-card in-stock">
+      <div class="inner-card in-stock select">
         <h4>Bamboo Stand</h4>
         <p class="priceline">Pledge $25 or more</p>
         <p>
@@ -101,9 +105,13 @@
             <span class="amount">101</span><span class="text">left</span>
           </h5>
         </div>
-        <button class="cyan-button">Select Reward</button>
+        <button class="cyan-button select-button">Select Reward</button>
+        <div class="options">
+
+        </div>
       </div>
-      <div class="inner-card in-stock">
+
+      <div class="inner-card in-stock select">
         <h4>Black Edition Stand</h4>
         <p class="priceline">Pledge $75 or more</p>
         <p>
@@ -115,8 +123,12 @@
             <span class="amount">64</span><span class="text">left</span>
           </h5>
         </div>
-        <button class="cyan-button">Select Reward</button>
+        <button class="cyan-button select-button">Select Reward</button>
+        <div class="options">
+
+        </div>
       </div>
+
       <div class="inner-card out-of-stock">
         <h4>Mahogany Special Edition</h4>
         <p class="priceline">Pledge $200 or more</p>
@@ -142,7 +154,7 @@
         </div>
         <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
         <form>
-          <div class="page-card">
+          <div class="page-card select">
             <div class="pledge-container">
               <input type="radio" id="pledge" name="pledge-type" value="pledge">
               <div class="pledge-info">
@@ -152,7 +164,7 @@
             <p>Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.</p>
           </div>
 
-          <div class="page-card pledge">
+          <div class="page-card pledge select">
             <div class="pledge-container">
               <input type="radio" id="bamboo-edition" name="pledge-type" value="bamboo">
               <div class="pledge-info">
@@ -164,7 +176,7 @@
             <p><span class="pledge-quantity">101</span> left</p>
           </div>
 
-          <div class="page-card pledge">
+          <div class="page-card pledge select">
             <div class="pledge-container">
               <input type="radio" id="black-edition" name="pledge-type" value="black">
               <div class="pledge-info">
@@ -178,7 +190,7 @@
 
           <div class="page-card pledge">
             <div class="pledge-container">
-              <input type="radio" id="mahogany-edition" name="pledge-type" value="mahogany">
+              <input type="radio" id="mahogany-edition" disabled="true" name="pledge-type" value="mahogany">
               <div class="pledge-info">
                 <label for="mahogany-edition" class="pledge-option">Mahogany Special Edition</label>
                 <span class="pledge-priceline">Pledge $200 or more</span>
@@ -192,7 +204,7 @@
     </section>
 
     <!-- support modal thanks -->
-    <section class="modal" id="modal-support">
+    <section class="modal hidden" id="modal-support">
       <div class="modal-content page-card">
           <img src="./images/icon-check.svg" />
           <h4>Thanks for your support!</h4>

@@ -44,3 +44,11 @@ document.getElementById('modal-support-button').addEventListener("click", functi
 
     modal.classList.add('hidden')
 })
+
+
+// let selectButton = document.getElementsByClassName('select-button')
+
+// alert(selectButton[0].innerHTML)
+// selectButton.addEventListener("click", function() {
+//     alert('click')
+// })

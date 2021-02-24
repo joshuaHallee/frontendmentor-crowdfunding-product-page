@@ -380,6 +380,24 @@ body {
     outline-style: none;
 }
 
+.select:focus-within {
+    border: 2px solid hsl(176, 72%, 28%)
+}
+
+.select:focus-within input[]{
+    border: 2px solid hsl(176, 72%, 28%)
+}
+
+.select:focus-within  .select-button {
+
+}
+
+.select-button {
+
+}
+
+
+
 @media (min-width: 575px) {
     .hero-banner {
         background-image: url('./images/image-hero-desktop.jpg') !important;
@@ -392,5 +410,29 @@ body {
 
     .modal-content {
         max-width: 690px;
+    }
+
+    #back-project-button {
+        max-width: 240px;
+    }
+
+    #bookmark-mobile {
+        display: none;
+    }
+    /* #bookmark {
+        
+        background-color: hsl(0, 0%, 68%);
+    } */
+    .desktop-bookmark {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: hsl(0, 0%, 88%);
+        border-radius: 50px;
+    }
+    .desktop-bookmark div {
+        padding: 0px 20px;
+        text-align: center;
+        font-weight: 500;
     }
 }
